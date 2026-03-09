@@ -1,0 +1,230 @@
+.centered
+{
+    text-align: center;
+}
+
+/* Fade Up animation */
+@keyframes fade-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fade-animation {
+  animation: 2.5s fade-up;
+}
+
+/* Fade in animation */
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+}
+
+.fade-in {
+  animation: 3.5s fade;
+}
+
+/* Items appear as it scrolls into view */
+.scroll-fade {
+  animation: fade;
+  animation-timing-function: ease;
+  animation-timeline: view(auto);
+}
+
+
+/* For sidebar bar */
+.nav {
+  gap: 15px;
+  margin-left: 15px;
+}
+
+name {
+  margin-left: 1.5rem;
+}
+
+.nav .nav-link {
+    color: #6c757d !important;
+}
+
+.nav .active {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Changes nav pill color when hovered */
+.nav a:hover:not(.active) {
+    background-color: #6c757d;
+    color: white !important;
+}
+
+/* Adjustments for different screen sizes if needed */
+@media (max-width: 768px) {
+  .fixed-sidebar {
+    position: static; /* Revert to static on small screens */
+    width: 100%;
+    height: auto;
+  }
+  .main-content-scroll {
+    margin-left: 0;
+  }
+}
+
+.fixed-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  padding: 1rem;
+  overflow-y: auto; /* Adds scrollbar if content is long */
+}
+
+.main-content-scroll {
+   overflow-y: auto;
+  margin-left: 220px;
+}
+
+/* Background color for website */
+page {
+    background-color: #212529;
+    display: block;
+    color: white;
+}
+
+/* For index.html */
+
+/* Background image for index */
+cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("15park.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Intro text format for index */
+covertxt {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-wrap: balance;
+}
+
+covertxt > h3 {
+  margin-top: 20px;
+}
+
+covertxt > p {
+  margin-top: 10px;
+  margin-bottom: 2.5rem;
+}
+
+/* For chinatown.html */
+
+.essaydate {
+    color: #6c757d;
+}
+
+/* Header image */
+header > .p-5 {
+   background-image: url('station.jpg');
+   background-size: cover;
+   background-position: right 0% bottom 62%;
+}
+
+.paragraph {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+/* For map.html */
+
+.mapheader{
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+/* Crop carousel images to same size */
+.carousel-inner > .carousel-item > img  {
+   height: 412px;
+   width: 100%;
+   object-fit: cover;
+   horizontal-align: middle;
+}
+
+/* Scale embed size with container */
+iframe {
+  border-radius: 2rem;
+  margin-top: 2rem;
+  width: 60%;
+  height: 500px;
+  border: 0;
+}
+
+.map > iframe {
+  height: 80%;
+}
+
+.mapdivider {
+  margin: 5rem 0;
+}
+
+.centered > .mb-auto {
+  margin-bottom: 7rem !important;
+}
+
+figcaption {
+  font-size: 18px !important;
+}
+
+
+/* For aqua.html */
+
+/* Header image */
+.tank {
+    background-image: url('tank.jpg');
+    background-size: cover;
+    display: table;
+    width: 100%;
+    height: 300px;
+}
+
+.card {
+  width: 100%;
+}
+
+/* Crop all images to same size */
+.card > img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* For rocks.html */
+
+canvas {
+  background-color: #FFFFFF;;
+  border-radius: 25px;
+}
+
+javagame > div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}

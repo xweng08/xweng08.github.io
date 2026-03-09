@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="fonts.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Learn about my New York!</title>
+    </head>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="fixed-sidebar text-bg-dark">
+                <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <name class="fs-4">Sunset Park</name>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="map.html" class="nav-link active" aria-current="page">
+                            My New York
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chinatown.html" class="nav-link">
+                            My Essay
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aqua.html" class="nav-link">
+                            Aquarium
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rocks.html" class="nav-link">
+                            Rock Paper Scissors
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <page class="col main-content-scroll min-vh-100">
+
+                <div id="autocarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="3500">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#autocarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#autocarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#autocarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="5ave.webp" class="d-block w-100" alt="image of 5th avenue">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Most of the houses between avenues are the ionic "Brownstone Townhouses."</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="8ave.jpg" class="d-block w-100" alt="image of 8th avenue">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>8th avenue, Brooklyn's Chinatown, holds celebrations every year for Lunar New  Year.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="sun.jpg" class="d-block w-100" alt="image of sunset park">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>The view of Manhattan's skyline from the park which the neighborhood was named after.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#autocarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#autocarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="centered fade-in">
+                    <div class="row">
+                        <div class="col-md-7 mapheader">
+                            <h2 class="playfair-display-bold">
+                                Sunset Park
+                            </h2>
+                            <p class="lead">
+                                Multicultural Sunset Park is known for both a booming Chinatown, with noodle shops and dim sum spots, and a diverse Latino community. From a leafy hilltop, the namesake park offers Statue of Liberty views, while pastoral Green-Wood Cemetery is permanent home to famous New Yorkers. On the waterfront, the Industry City warehouse complex houses creative industries and draws locals for casual artisanal eats and spirits.
+                            </p>
+                            <figcaption class="blockquote-footer">
+                                Google
+                            </figcaption>
+                            <a href="chinatown.html" class="btn btn-lg btn-light fw-bold border-white bg-white">Check out my Essay!</a>
+                        </div>
+                        <div class="col-md-5 map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24216.169119304337!2d-74.00741775!3d40.651464399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ab3e466657d%3A0x83eb32ea80df632!2sSunset%20Park%2C%20Brooklyn%2C%20NY!5e0!3m2!1sen!2sus!4v1772545232490!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <hr class="mapdivider">
+                    <div class="scroll-fade">
+                        <h3 class="playfair-display-bold"> Have a walk through 8th Avenue, also known as Brooklyn's Chinatown. </h3>
+                        <p> Start from the 8th Avenue N train station, which provides a direct link to Manhattan's Chinatown! This area houses mostly Fuzhounese and Cantonese immigrants.</p>
+                       <iframe src="https://www.google.com/maps/embed?pb=!4v1772600890266!6m8!1m7!1sGnlQw6ODj764QDbTnZ2_BQ!2m2!1d40.63440416515395!2d-74.01073745930456!3f40.255495052613675!4f-4.956609511460286!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <hr class="mapdivider">
+                    <div class="scroll-fade">
+                        <h3 class="playfair-display-bold"> Check out the Sunset Park park, spanning two Avenues. </h3>
+                        <p> The park has a community center, pool, playgrounds, swings, ball courts, soccer fields, and a view of Manhattan from the hill.</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1772599313916!6m8!1m7!1sVIuKaGnSI1FDAgd5u3-HqA!2m2!1d40.64684121666694!2d-74.00186716290004!3f303.14827552095073!4f1.1085781185263102!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <hr class="mapdivider">
+                    <div class="mb-auto scroll-fade">
+                        <h3 class="playfair-display-bold"> Have a look around 5th Avenue, filled with mom-and-pop shops as well as national chains. </h3>
+                        <p> 5th Avenue houses the majority of Sunset's Hispanic and Latino population! </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1772599458437!6m8!1m7!1sSyv1RyB_0v5rWvOpu6UKrg!2m2!1d40.65011990365441!2d-74.00508827332081!3f220.18166721867854!4f-2.3762868173822795!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+
+            </page>
+        </div>
+    </div>
+
+</html>
